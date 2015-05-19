@@ -300,7 +300,7 @@ if ~debug
     end;
     status = Eyelink('OpenFile',abbreviatedFilename);
     if status
-        error(['openfile error, status: ',status]);
+        error(['openfile error, status: ', num2str(status)]);
     end
     Eyelink('StartRecording');
 end
