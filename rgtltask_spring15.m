@@ -298,8 +298,11 @@ if ~debug
             break;
         end
     end;
-    Eyelink('OpenFile',abbreviatedFilename)
-    Eyelink('StartRecording')
+    status = Eyelink('OpenFile',abbreviatedFilename);
+    if status
+        error(['openfile error, status: ',status]);
+    end
+    Eyelink('StartRecording');
 end
 
 
