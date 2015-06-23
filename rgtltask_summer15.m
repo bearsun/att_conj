@@ -21,7 +21,7 @@ global rect
 monitorh=30; %12;% in cm
 distance=55; %25;% in cm
 mainscreen=1;
-rng('shuffle');
+rng('default');
 nblocks=6;
 ttrials=150;
 ntrialsperb=ttrials/nblocks;
